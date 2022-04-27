@@ -1467,14 +1467,6 @@ const cloudflarePages = defineNitroPreset({
   entry: "#internal/nitro/entries/cloudflare-pages",
   commands: {
     preview: "npx miniflare ./server/_worker.js --site ./public"
-  },
-  hooks: {
-    async "compiled"(nitro) {
-      await fse.move(resolve(nitro.options.output.dir, "server/index.mjs"), resolve(nitro.options.output.dir, "_worker.js"));
-      await fse.remove(resolve(nitro.options.output.dir, "server"));
-      await writeFile$1(resolve(nitro.options.output.dir, "package.json"), JSON.stringify({ private: true, main: "./_worker.js" }, null, 2));
-      await writeFile$1(resolve(nitro.options.output.dir, "package-lock.json"), JSON.stringify({ lockfileVersion: 1 }, null, 2));
-    }
   }
 });
 
