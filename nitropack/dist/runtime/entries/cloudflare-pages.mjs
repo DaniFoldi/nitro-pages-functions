@@ -9,7 +9,10 @@ export default {
 };
 async function handleEvent(request, env, context) {
   try {
-    return await env.ASSETS.fetch(request, { cacheControl: assetsCacheControl });
+    const asset = await env.ASSETS.fetch(request, { cacheControl: assetsCacheControl });
+    if (asset.status !== 404) {
+      return asset;
+    }
   } catch (_err) {
   }
   const url = new URL(request.url);
