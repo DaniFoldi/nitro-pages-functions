@@ -1,0 +1,24 @@
+{
+  "name": "nitro-pages-functions",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "NITRO_PRESET=cloudflarePages nitro build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DaniFoldi/nitro-pages-functions.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/DaniFoldi/nitro-pages-functions/issues"
+  },
+  "homepage": "https://github.com/DaniFoldi/nitro-pages-functions#readme",
+  "devDependencies": {
+    "@cloudflare/wrangler": "^1.19.12",
+    "nitropack": "^0.3.7"
+  }
+}
