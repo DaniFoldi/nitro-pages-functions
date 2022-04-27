@@ -1,5 +1,5 @@
 {
-  "date": "2022-04-27T12:19:21.497Z",
+  "date": "2022-04-27T12:30:21.946Z",
   "commands": {
     "preview": "npx miniflare ./server/_worker.js --site ./public",
     "deploy": "cd ./server && npx wrangler publish"

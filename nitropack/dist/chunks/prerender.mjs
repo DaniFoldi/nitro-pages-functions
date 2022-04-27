@@ -1951,7 +1951,6 @@ const NitroDefaults = {
   commands: {}
 };
 async function loadOptions(userConfig = {}) {
-  console.log("----", userConfig)
   let preset = userConfig.preset || process.env.NITRO_PRESET || detectTarget() || "node-server";
   if (userConfig.dev) {
     preset = "nitro-dev";

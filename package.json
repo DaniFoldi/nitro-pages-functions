@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "build": "NITRO_PRESET=cloudflarePages nitro build"
+    "build": "rm -r node_modules/nitropack/* && cp -r nitropack/* node_modules/nitropack/ && NITRO_PRESET=cloudflarePages nitro build"
   },
   "repository": {
     "type": "git",

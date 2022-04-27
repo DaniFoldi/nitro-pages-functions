@@ -1,3 +1,2 @@
-node_modules/*
-!node_modules/nitropack
+node_modules/
 .nitro
