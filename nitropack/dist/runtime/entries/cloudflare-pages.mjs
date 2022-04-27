@@ -4,7 +4,7 @@ import { nitroApp } from "nitropack/dist/runtime/app";
 
 export default {
   async fetch(request, env, context) {
-    return handleEvent(request, env, context);
+    return await handleEvent(request, env, context);
   }
 };
 async function handleEvent(request, env, context) {
