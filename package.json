@@ -18,7 +18,7 @@
   },
   "homepage": "https://github.com/DaniFoldi/nitro-pages-functions#readme",
   "devDependencies": {
-    "nitropack": "npm:@danifoldi/nitropack@^0.0.1",
+    "nitropack": "npm:@danifoldi/nitropack@^0.0.2",
     "wrangler": "^2.0.2"
   }
 }
