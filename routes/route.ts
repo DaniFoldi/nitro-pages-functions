@@ -1,1 +1,1 @@
-export default () => 'works'
+export default eventHandler(() => 'Hello World!')
